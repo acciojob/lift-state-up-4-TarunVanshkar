@@ -20,7 +20,7 @@ const Child = ({itemList, setItemList}) => {
         <ul>
             {
                 itemList.map((item, index) => {
-                    return <li key={index}>
+                    return <li key={index} className="child li">
                         {item.itemName} - ${item.itemPrice} <button onClick={() => handleRemove(index)}>Remove</button>
                     </li>
                 })
